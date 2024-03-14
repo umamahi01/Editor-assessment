@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Title from './Title';
+import Button from './Button';
+import DraftEditor from './Editor';
 
 function App() {
+  const handleSave = () => {
+    // Custom save logic can be added here
+    alert('Content saved to localStorage!');
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Title text="Draft.js Editor" />
+      <Button onClick={handleSave} label="Save" />
+      <DraftEditor />
     </div>
   );
 }
