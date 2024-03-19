@@ -1,0 +1,66 @@
+/* App.css */
+
+/* Keyframes for rainbow animation */
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Styles for the editor container */
+.editor-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 500px; /* Set height to viewport height minus header/footer height */
+   margin:20px;
+  
+  box-sizing: border-box;
+  border: 2px solid transparent; /* Start with a transparent border */
+  border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red, violet); /* Apply rainbow colors to border */
+  border-image-slice: 1;
+  animation: rainbow 10s infinite linear; /* Apply rainbow animation to the border */
+  overflow: hidden; /* Ensure the animation stays within the border */
+}
+
+/* Optional: Adjust the scrollbar style */
+.editor-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.editor-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+
+
+
+  
+  #align-horizontal {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around; 
+    align-items: center;
+    margin-bottom: 10px;
+  }
+ 
+  #align-horizontal.title {
+   flex-direction: column;
+    flex: 1; /* Take up remaining space */
+  
+    text-align: center; /* Center the text horizontally */
+   
+  }
+  .btn{
+    margin: 0 20px; /* Add margin to the button */
+  }
+  
+  
+ 
+  

@@ -1,5 +1,7 @@
 /* Button.css */
-.custom-button {
+
+  .save-btn {                                                                                                                               
+   margin: 10px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -7,10 +9,8 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 10px;
   }
   
-  .custom-button:hover {
+  .save-btn:hover {
     background-color: #0056b3;
   }
-  
